@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items:center ;
+	background-color: grey;
+}
+nav img{
+	width: 120px;
+	
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+	background-color: grey;
+
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.nav-links ul li ::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: white;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li a:hover::after{
+	width: 100%;
+
+}
+.about-section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+}
+.container{
+	width:80%;
+	display: block;
+	margin: auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.container-section .title{
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.container-section .content h3{
+	margin-top: 20px;
+	color: #5d5d5d;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: px;
+}
+.content-section .content h3{
+	margin-top:20px;
+	color: #5d5d5d;
+	font-size: 19px;
+
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: rosybrown;
+	padding: 12px 40px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: palevioletred;
+	color: white;
+}
+.content-section .social-media{
+	margin: 40px 40px;
+}
+.content-section .social-media i{
+	color:darkseagreen;
+	font-size: 30px;
+	padding: 0px 10px;
+}
+.content-section .social-media i:hover{
+	color: lightseagreen;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width:80%;
+	display: block;
+	margin: auto;
+	padding-top: 50px;
+	}
+	.content-section{
+	float: none;
+	width: 100%;
+	display: block;
+	margin: auto;
+	}
+	.image-section{
+	float: none;
+	width: 100%;
+	display: block;
+	margin: auto;
+	}
+
+}
